@@ -1,28 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <title>Electric Scooter MPGe Calculator</title>
     <link href="main.css" rel="stylesheet" />
   </head>
   <body>
-    <div id="root">
-      <h1>Electric Scooter MPGe Calculator</h1>
+    <div>
       <div>
-        <label>
-          <div>Battery Wh</div>
-          <input type="number" value="551" id="wh" />
-        </label>
+        <h1>Electric Scooter MPGe Calculator</h1>
+        <div>
+          <label>
+            <div>Battery Wh:</div>
+            <input type="number" value="551" id="wh" />
+          </label>
+          <br />
+          <br />
+          <label>
+            <div>Miles Per Charge:</div>
+            <input type="number" value="40.4" id="mpc" />
+          </label>
+        </div>
         <br />
         <br />
-        <label>
-          <div>Miles Per Charge</div>
-          <input type="number" value="40.4" id="mpc" />
-        </label>
+        <div>
+          MPGe:
+          <div id="result"></div>
+        </div>
       </div>
       <br />
       <br />
-      <div>MPGe: <span id="result"></span></div>
+      <div>
+        <h2>Common Scooters</h2>
+        <div>
+          <button class="preset" data-model="nineEs2">Ninebot ES2</button>
+          <button class="preset" data-model="nineEs4">Ninebot ES4</button>
+          <button class="preset" data-model="nineMax">Ninebot Max</button>
+          <button class="preset" data-model="mi365">Mi m365</button>
+          <button class="preset" data-model="mi365pro">Mi m365 pro</button>
+        </div>
+      </div>
     </div>
     <script type="text/javascript" src="main.js" async></script>
   </body>
